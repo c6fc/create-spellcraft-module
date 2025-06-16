@@ -1,0 +1,13 @@
+{
+  "name": "create-spellcraft-module",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": "bin/index.js",
+  "scripts": {
+    "create-spellcraft-module": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brad Woodward <brad@bradwoodward.io>",
+  "license": "MIT",
+  "description": "A framework generator for @c6fc/spellcraft plugins."
+}
