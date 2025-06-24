@@ -1,11 +1,23 @@
 {
   "name": "create-spellcraft-module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "bin": "bin/index.js",
   "scripts": {
     "create-spellcraft-module": "node bin/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c6fc/create-spellcraft-module.git"
+  },
+  "keywords": [
+    "jsonnet",
+    "spellcraft"
+  ],
   "author": "Brad Woodward <brad@bradwoodward.io>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c6fc/create-spellcraft-module/issues"
+  },
+  "homepage": "https://github.com/c6fc/create-spellcraft-module",
   "description": "A framework generator for @c6fc/spellcraft plugins."
 }
