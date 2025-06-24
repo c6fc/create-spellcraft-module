@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "module.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "doc": "jsdoc -c jsdoc.json --verbose"
+    "test": "node utils/test.js",
+    "doc": "jsdoc -c utils/jsdoc.json --verbose"
+  },
+  "bin": {
+    "cli": "utils/cli-test.js"
   },
   "repository": {
     "type": "git",

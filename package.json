@@ -1,9 +1,9 @@
 {
   "name": "create-spellcraft-module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": "bin/index.js",
   "scripts": {
-    "create-spellcraft-module": "node bin/index.js",
+    "create-spellcraft-module": "node bin/index.js"
   },
   "author": "Brad Woodward <brad@bradwoodward.io>",
   "license": "MIT",
