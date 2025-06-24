@@ -30,7 +30,7 @@ if (process.argv.length > 2) {
 }
 
 // Create the project directories
-["spellcraft_modules"].forEach(e => {
+["utils"].forEach(e => {
 	fs.mkdirSync(path.join(targetPath, e));
 });
 
@@ -42,13 +42,15 @@ function interpolateTemplate(content) {
 
 // [template_file]: "path/to/render";
 Object.entries({
-	".gitignore": ".gitignore",
-	"native_module.js": "spellcraft_modules/native_module.js",
-	"jsdoc.json": "jsdoc.json",
+	"cli-test.js": "utils/cli-test.js",
+	"gitignore": ".gitignore",
+	"jsdoc.json": "utils/jsdoc.json",
 	"module.js": "module.js",
 	"module.libsonnet": "module.libsonnet",
 	"package.json": "package.json",
-	"README.md": "README.md"
+	"README.md": "README.md",
+	"test.js": "utils/test.js",
+	"test.jsonnet": "test.jsonnet"
 }).forEach(([key, filepath]) => {
 	const content = fs.readFileSync(path.join(__dirname, '../templates', key)).toString("ascii");
 	fs.writeFileSync(path.join(targetPath, filepath), interpolateTemplate(content));

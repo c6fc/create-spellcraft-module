@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{name}}.git"
+    "url": "git+https://github.com/you/{{name}}.git"
   },
   "config": {
-    "spellcraft_module_default_name": "packer"
+    "spellcraft_module_default_name": null
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/{{name}}/issues"
+    "url": "https://github.com/you/{{name}}/issues"
   },
-  "homepage": "https://github.com/{{name}}#readme",
-  "description": "A plugin to expose Hashicorp Packer via @c6fc/spellcraft",
+  "homepage": "https://github.com/you/{{name}}#readme",
+  "description": "A plugin to add functionality via @c6fc/spellcraft",
   "devDependencies": {
     "clean-jsdoc-theme": "^4.3.0",
     "jsdoc": "^4.0.4"

@@ -1,0 +1,15 @@
+/*
+	`npm run test` and `npx cli` always links the current module as 'foo'.
+	
+	This file should manifest all the exposed features of your module
+	so users can see examples of how they are used, and the output they
+	generate.
+*/
+
+local foo = import "foo.libsonnet";
+
+{
+	bar: foo.bar(),
+	baz: foo.baz("Earl", 3),
+	beefcakecafe: foo.beefcakecafe("party!")
+}

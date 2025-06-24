@@ -1,15 +1,6 @@
 'use strict';
 
 /**
- * @fileOverview Placeholder for documenting CLI commands added by SpellCraft Packer integration.
- * This file (or these JSDoc blocks if placed elsewhere) describes the CLI commands
- * that become available when the SpellCraft Packer Integration module is active.
- */
-
-// It's good practice to define the module itself if it's purely conceptual
-// and doesn't correspond to a direct JavaScript file module export.
-
-/**
  * @module {{name}}-cli
  * @description This module represents the set of CLI commands provided by the
  * SpellCraft plugin. These commands are added to the main
@@ -84,3 +75,47 @@ exports._spellcraft_metadata = {
 		process.env.BAZ = "foo";
 	}
 }
+
+// Example of a simple return function.
+
+/**
+ * Returns the string literal 'baz'.
+ *
+ * @function bar
+ * @memberof module:foo
+ * @returns {string} `baz`
+ * @example
+ * local foo = import "foo";
+ * { bar: foo.bar() }
+ */
+
+exports.bar = [() => 'baz'];
+
+
+
+// Example of a complex object interpolation.
+
+/**
+ * Returns the string literal 'baz'.
+ *
+ * @function baz
+ * @param {string} name - The name of the object to return
+ * @param {number} siblings - How many sibling objects to create
+ * @memberof module:foo
+ * @example
+ * local foo = import "foo";
+ * { baz: foo.baz("Earl", 3) }
+ * 
+ * // Returns:
+ * { "Earl": {
+ * 	siblings: ["sibling_1", "sibling_2", "sibling_3"]
+ * }}
+ */
+
+exports.baz = [(name, siblings) => {
+	return obj = {
+		[name]: {
+			siblings: Array.from(Array(siblings), (_, i) => `sibling_${i}`)
+		}
+	};
+}, "name", "siblings"];

@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/{{name}}.svg?style=flat)](https://www.npmjs.com/package/{{name}})
 [![License](https://img.shields.io/npm/l/{{name}}.svg?style=flat)](https://opensource.org/licenses/MIT)
 
-Seamlessly integrate [HashiCorp Packer](https://www.packer.io/) into your [SpellCraft](https://github.com/@c6fc/spellcraft) SpellFrames. This plugin allows you to define Packer configurations using Jsonnet, render them with SpellCraft, and then use Packer to build your machine images or other artifacts.
+This is a placeholder plugin with example documentation and structures for all plugin capabilities, making it easy to copy/paste as needed to add desired functionality.
 
 ## Features
 
