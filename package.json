@@ -1,6 +1,6 @@
 {
   "name": "create-spellcraft-module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "bin": "bin/index.js",
   "scripts": {
     "create-spellcraft-module": "node bin/index.js"

@@ -1,3 +1,9 @@
+/**
+ * @module {{name}}
+ * @description This module represents the JSonnet and JavaScript native
+ * functions exposed by this plugin.
+ */
+
 // Don't try to 'import' your spellcraft native functions here.
 // Use std.native(function)(..args) instead
 
@@ -12,7 +18,7 @@
    *
    * @function beefcakecafe
    * @param {string} say
-   * @memberof module:foo
+   * @memberof module:{{name}}
    * @returns {string} `moo (${say})`
    * @example
    * local foo = import "foo";

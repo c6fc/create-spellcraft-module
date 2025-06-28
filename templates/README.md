@@ -1,4 +1,4 @@
-# SpellCraft Packer Integration
+# SpellCraft {{name}} Module
 
 [![NPM version](https://img.shields.io/npm/v/{{name}}.svg?style=flat)](https://www.npmjs.com/package/{{name}})
 [![License](https://img.shields.io/npm/l/{{name}}.svg?style=flat)](https://opensource.org/licenses/MIT)
@@ -76,10 +76,10 @@ npx spellcraft importModule {{name}} foo
 Once installed, you can load the module into your JSonnet files by the name you specified with `importModule`, in this case 'foo':
 
 ```jsonnet
-local foo = import "foo";
+local modules = import "modules";
 
 'test.json': {
-	foo: foo.bar()
+	foo: modules.foo.bar()
 }
 ```
 
