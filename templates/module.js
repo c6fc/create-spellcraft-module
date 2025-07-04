@@ -119,3 +119,32 @@ exports.baz = [(name, siblings) => {
 		}
 	};
 }, "name", "siblings"];
+
+/**
+ * An arrow function that demonstrates that `this` is inaccessible
+ * from arrow functions.
+ *
+ * @function foobar
+ * @memberof module:foo
+ * @returns {undefined}
+ * @example
+ * local foo = import "foo";
+ * { bar: foo.foobar() }
+ */
+
+exports.foobar = [() => this.foo]; // returns undefined
+
+/**
+ * A traditional function that shows how `this` is accessible
+ * from non-arrow functions, as defined in `funcionContext`
+ * of the module.
+ *
+ * @function foobaz
+ * @memberof module:foo
+ * @returns {string} "This is a foobarbaz"
+ * @example
+ * local foo = import "foo";
+ * { bar: foo.foobaz() }
+ */
+
+exports.foobaz = [function () { return this.foo }];

@@ -16,7 +16,10 @@ const { _spellcraft_metadata } = require('../module.js');
 const spellframe = new SpellFrame();
 
 (async () => {
-	spellframe.loadModuleByName("foo", "..");
+	spellframe.loadCurrentPackageAsModule("foo");
+	// load other modules by name if your test relies on dependencies. e.g.;
+	// spellframe.loadModuleByName("awsauth")
+	
 	spellframe.init();
 	await spellframe.render("./test.jsonnet");
 

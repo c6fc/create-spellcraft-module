@@ -1,5 +1,5 @@
 {
-  "name": "{{name}}",
+  "name": "you/{{name}}",
   "version": "1.0.0",
   "main": "module.js",
   "scripts": {
@@ -14,6 +14,7 @@
   "config": {
     "spellcraft_module_default_name": null
   },
+  "keywords": ["spellcraft"],
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -24,5 +25,8 @@
   "devDependencies": {
     "clean-jsdoc-theme": "^4.3.0",
     "jsdoc": "^4.0.4"
+  },
+  "dependencies": {
+    "@c6fc/spellcraft": "^0.0.5"
   }
 }
