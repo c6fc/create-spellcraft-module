@@ -27,6 +27,6 @@
     "jsdoc": "^4.0.4"
   },
   "dependencies": {
-    "@c6fc/spellcraft": "^0.0.5"
+    "@c6fc/spellcraft": "^0.0.11"
   }
 }
